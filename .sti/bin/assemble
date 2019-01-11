@@ -134,7 +134,7 @@ chmod -R g+rwX $HOME
 
 # If you want to deploy exploded war files, you have to touch dodeploy files.
 for file in $DEPLOY_DIR/*.war; do
-  touch $DEPLOY_DIR/$file.dodeploy
+  touch $file.dodeploy
 done
 
 # Remove java tmp perf data dir owned by 185
